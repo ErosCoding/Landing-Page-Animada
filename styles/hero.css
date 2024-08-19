@@ -4,38 +4,77 @@ section.hero {
   padding: 2.5rem 2rem;
   margin-inline: auto;
 
-  & h1 {
+    & h1 {
     max-width: 40rem;
-  }
+    }
 
-  & h1 div {
+    & h1 div {
     display: inline-block;
     overflow: hidden;
     height: 5rem;
     width: min-content;
     vertical-align: bottom;
-  }
+    }
 
-  & h1 span:nth-child(1),
-  & h1 span:nth-child(4) {
+    & h1 span:nth-child(1),
+    & h1 span:nth-child(4) {
     color: var(--snitap-sky-mid);
-  }
+    }
 
-  & h1 span:nth-child(2){
+    & h1 span:nth-child(2){
     color: var(--snitap-joy-mid);
-  }
+    }
 
-  & h1 span:nth-child(3){
+    & h1 span:nth-child(3){
     color: var(--snitap-leaf-mid);
-  }
+    }
 
-  & h1 span {
+    & h1 span {
     display: block;
 
     animation: slideUp 6s infinite ease;
+    }
+
+    & .buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    & .button {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+
+      border-radius: 5rem;
+
+      transition: scale 350ms;
+
+      &.buy {
+        padding: 1.5rem 3rem;
+        background-color: var(--snitap-sun);
+      }
+
+      &.play span {
+        padding: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+      }
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+
+    & .shadow {
+      box-shadow: 
+      0 2px 5px rgb(0 0 0 / .1),
+      0 9px 9px rgb(0 0 0 / .09),
+      0 20px 12px rgb(0 0 0 / .05),
+      0 36px 15px rgb(0 0 0 / .01);
+    }
   }
-    
-  }
+}
 
   @keyframes slideUp {
     /* radical static */
