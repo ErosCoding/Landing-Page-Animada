@@ -12,8 +12,7 @@ Aplicação desenvolvida durante a Formação Fullstack
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
-- CSS
-- CSS Animations
+- CSS Animations e Transitions
 
 ## Projeto
 
